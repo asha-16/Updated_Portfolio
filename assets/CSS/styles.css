@@ -125,14 +125,19 @@ body {
 /* ========================================
    REUSABLE STYLES
 ======================================== */
-.home-section {
+.asha-section {
     position: relative;
     overflow: hidden;
 }
 
-.container {
+.asha-container {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.asha-sub-container {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
 }
 
 .wrapper {
@@ -140,6 +145,35 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.section-title h3 {
+    color: var(--color-01);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: var(--color-04);
+    font-size: var(--base-font-size);
+    font-weight: var(--font-regular);
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:75px ;
+}
+
 
 /* ========================================
    COMPONENTS
@@ -291,7 +325,7 @@ body {
 .bottom-nav .menu {
     background: var(--bottom-nav-bg);
     backdrop-filter: blur(10px);
-    padding: 16px 35px;
+    padding: 15px 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,7 +511,7 @@ body {
 
 .home-socials {
     position: absolute;
-    left: 15%;
+    left: 10%;
 }
 
 .home-socials span{
@@ -546,7 +580,7 @@ body {
 
 .home-scroll-btn {
     position: absolute;
-    right: 15%;
+    right: 10%;
     color: var(--color-01);
     display: grid;
     justify-items: center;
@@ -583,4 +617,85 @@ body {
 
 .home-scroll-btn i {
     font-size: 2rem;
+}
+
+
+/* ========================================
+   ABOUT ME
+======================================== */
+.about-image {
+    position: relative;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-details {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about-info .iam {
+    color: var(--color-02);
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold0);
+    margin-bottom: 30px;
+}
+
+.about-descrription {
+    font-size: var(--base-font-size);
+    font-weight: var(--font-regular);
+    line-height: 25px;
+}
+
+.pro-list {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    column-gap: 10px;
+    row-gap: 12px;
+    margin: 38px 0;
+}
+
+.pro-card {
+    background: var(--card-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 35px 25px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.pro-card span {
+    color: var(--primary-color);
+    font-size: 2.75rem;
+    font-weight: var(--font-bold);
+}
+
+.pro-card p {
+    color: var(--color-02);
+    font-size: var(--tiny-font-size);
+    font-weight: var(--font-regular);
+    line-height: 20px;
+    max-width: 100px;
+}
+
+.about-btns {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 25px;
 }
