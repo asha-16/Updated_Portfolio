@@ -862,7 +862,7 @@ body {
 .skill-card {
   background: var(--card-bg);
   border-radius: 10px;
-  padding: 30px 25px;
+  padding: 20px 25px;
   border-bottom: 4px solid var(--primary-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -870,8 +870,13 @@ body {
   width: 270px;
 }
 
-.skill-card:hover {
-  transform: translateY(-8px);
+.skill-card-left:hover {
+  transform: translateX(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card-right:hover {
+  transform: translateX(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
