@@ -314,7 +314,7 @@ body {
     z-index: var(--z-fixed);
     position: fixed;
     left: 50%;
-    bottom: 50px;
+    bottom: 30px;
     transform: translateX(-50%);
 }
 
@@ -325,7 +325,7 @@ body {
 .bottom-nav .menu {
     background: var(--bottom-nav-bg);
     backdrop-filter: blur(10px);
-    padding: 15px 35px;
+    padding: 10px 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -649,13 +649,14 @@ body {
     color: var(--color-02);
     font-size: var(--h4-font-size);
     font-weight: var(--font-semi-bold0);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.about-descrription {
+.about-description {
     font-size: var(--base-font-size);
     font-weight: var(--font-regular);
     line-height: 25px;
+    text-align: justify;
 }
 
 .pro-list {
@@ -674,7 +675,7 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    padding: 35px 25px;
+    padding: 20px;
     text-align: left;
     border-radius: 5px;
 }
@@ -699,3 +700,227 @@ body {
     column-gap: 20px;
     row-gap: 25px;
 }
+
+
+
+/* ========================================
+   MY RESUME
+======================================== */
+.resume-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.resume-tabs .tab-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-01);
+    font-size: var(--md-font-size);
+    font-weight: var(--font-medium);
+    padding: 12px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resume-tabs .tab-btn:hover {
+    color: var(--hover-color);
+}
+
+.resume-tabs .tab-btn i {
+    font-size: var(--xl-font-size);
+    margin-right: 3px;
+}
+
+.resume-tabs .tab-btn.active {
+    color: var(--dark-color);
+    background: var(--primary-color);
+    padding: 12px 15px;
+}
+
+.resume-tabs .tab-btn.active:hover {
+    color: var(--white-color);
+    background: var(--hover-color);
+}
+
+.resume-tab-content {
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resume-tab-content.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* =========== EDUCATION TAB =========== */
+.education .resume-line {
+    background: var(--primary-color);
+    width: 2px;
+    height: 240px;
+}
+
+.resume-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 120px;
+}
+
+.resume-items .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-items .item::before {
+    content: "";
+    position: absolute;
+    background: var(--primary-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.resume-items .item .info {
+    position: absolute;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.resume-items .item .info i {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.resume-items .item .info h5 {
+    color: var(--color-02);
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-semi-bold);
+    white-space: break-spaces;
+    margin-bottom: 10px;
+}
+
+.resume-items .item .info p {
+    color: var(--color-04);
+    font-size: var(--sm-font-size);
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.resume-items .item .info span {
+    position: relative;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    font-size: var(--font-medium);
+    padding: 3px 12px;
+    border-radius: 3px;
+}
+
+.resume-items .item-left .info {
+    right: 35px;
+}
+
+.resume-items .item-right .info {
+    left: 50px;
+}
+
+.experience .resume-line {
+    background: var(--primary-color);
+    width: 2px;
+    height: 120px;
+}
+
+.education .experience {
+    transform: translateY(35px);
+}
+
+/* =========== SKILLS TAB =========*/
+.personal-skills .resume-line {
+  background: var(--primary-color);
+  width: 2px;
+  height:350px;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px 25px;
+  border-bottom: 4px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 270px;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.skill-card-content h5 {
+  color: var(--color-02);
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Hide skills by default */
+.skill-list {
+  list-style: none;
+  margin-top: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.skill-list li {
+  color: var(--color-02);
+  font-size: var(--sm-font-size);
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.skill-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Reveal on hover or active */
+.skill-card:hover .skill-list,
+.skill-card.active .skill-list {
+  opacity: 1;
+  max-height: 200px;
+}
+
+
