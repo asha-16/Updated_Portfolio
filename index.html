@@ -36,26 +36,20 @@
     </header>
 
 
-    <!--  ==================== Bottom Navigation menu ==================== -->
-   <!-- <div class="bottom-nav-container">
-        <div class="bottom-nav">
-            <div class="bottom-nav-inner">
-                <i class="ri-arrow-left-down-line menu-hide-btn"></i>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="current"><i class="ri-home-4-line"></i><span>Home</span></a></li>
-                    <li class="menu-item"><a href="#about"><i class="ri-user-line"></i><span>About</span></a></li>
-                    <li class="menu-item"><a href="#resume"><i class="ri-user-line"></i><span>Resume</span></a></li>
-                    <li class="menu-item"><a href="#service"><i class="ri-service-line"></i><span>Service</span></a></li>
-                    <li class="menu-item"><a href="#portfolio"><i class="ri-briefcase-3-line"></i><span>Portfolio</span></a></li>
-                    <li class="menu-item"><a href="#contact"><i class="ri-chat-1-line"></i></i><span>Contact</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="menu-show-btn">
-            <div class="bar-01"></div>
-            <div class="bar-02"></div>
-        </div>
-    </div>  -->
+    
+   <!-- ==================== BOTTOM NAVIGATION ==================== -->
+    <div class="bottom-nav-container" id="bottomNav">
+        <nav class="bottom-nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="#home"><i class="ri-home-4-line"></i></a></li>
+                <li class="menu-item"><a href="#about"><i class="ri-user-line"></i></a></li>
+                <li class="menu-item"><a href="#resume"><i class="ri-file-list-3-line"></i></a></li>
+                <li class="menu-item"><a href="#service"><i class="ri-service-line"></i></a></li>
+                <li class="menu-item"><a href="#portfolio"><i class="ri-briefcase-3-line"></i></a></li>
+                <li class="menu-item"><a href="#contact"><i class="ri-chat-1-line"></i></a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <!--  ==================== HOME ==================== -->
@@ -272,29 +266,17 @@
                             </div>
 
                             <div class="item item-left">
-                            <div class="skill-card skill-card-left info">
-                                <i class="ri-database-2-fill"></i>
-                                <div class="skill-card-content">
-                                <h5>Database</h5>
-                                <ul class="skill-list">
-                                    <li>SQL</li>
-                                </ul>
+                                <div class="skill-card skill-card-left info">
+                                    <i class="ri-database-2-fill"></i>
+                                    <div class="skill-card-content">
+                                        <h5>Database & Tools</h5>
+                                        <ul class="skill-list">
+                                            <li>SQL</li>
+                                            <li>Git & GitHub</li>
+                                            <li>Postman</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
-
-                            <div class="item item-right">
-                            <div class="skill-card skill-card-right info">
-                                <i class="ri-tools-fill"></i>
-                                <div class="skill-card-content">
-                                <h5>Tools</h5>
-                                <ul class="skill-list">
-                                    <li>Git & GitHub</li>
-                                    <li>Postman</li>
-                                    <!-- <li>VS Code</li> -->
-                                </ul>
-                                </div>
-                            </div>
                             </div>
 
                         </div>
@@ -320,8 +302,8 @@
                         <div class="card-with-modal">
                             <div class="service-card">
                                 <div class="service-info">
-                                    <i class="ri-pencil-ruler-2-fill service-icon"></i>
-                                    <h4>Web Design</h4>
+                                    <i class="ri-code-box-fill service-icon"></i>
+                                    <h4>Frontend Web Development</h4>
                                     <a class="service-see-more"> See more <i class="ri-arrow-right-up-fill"></i></a>
                                 </div>
                             </div>
@@ -331,16 +313,17 @@
                                     <a  class="modal-close-btn"><i class="ri-close-line"></i></a>
                                     <div class="modal-content">
                                         <div class="modal-title">
-                                            <h3>Web Design</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id saepe libero exercitationem similique accusamus consequuntur eos non expedita. Tenetur facere modi exercitationem earum laudantium debitis quas dolore quasi laboriosam?</p>
+                                            <h3>Frontend Web Development</h3>
+                                            <p>I build clean, responsive, and modern websites using HTML, CSS, and JavaScript. My focus is on creating fast-loading, accessible, and visually appealing user interfaces.</p>
                                         </div>
                                         <h4>What I Provide</h4>
                                         <ul class="my-services">
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
+                                            <!-- <li><i class="ri-checkbox-circle-fill"></i> <p>Pixel-perfect HTML/CSS layouts</p></li> -->
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Mobile-first responsive designs</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Interactive UI using JavaScript</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Reusable components and clean structure</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Cross-browser compatible interfaces</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Landing pages, portfolios, small business websites</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -351,8 +334,8 @@
                         <div class="card-with-modal">
                             <div class="service-card">
                                 <div class="service-info">
-                                    <i class="ri-pencil-ruler-2-fill service-icon"></i>
-                                    <h4>Web Design</h4>
+                                    <i class="ri-pantone-fill service-icon"></i>
+                                    <h4>UI/UX Design to Code</h4>
                                     <a class="service-see-more"> See more <i class="ri-arrow-right-up-fill"></i></a>
                                 </div>
                             </div>
@@ -362,16 +345,16 @@
                                     <a  class="modal-close-btn"><i class="ri-close-line"></i></a>
                                     <div class="modal-content">
                                         <div class="modal-title">
-                                            <h3>Web Design</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id saepe libero exercitationem similique accusamus consequuntur eos non expedita. Tenetur facere modi exercitationem earum laudantium debitis quas dolore quasi laboriosam?</p>
+                                            <h3>UI/UX Design to Code</h3>
+                                            <p>I convert Figma or any UI design into fully functional, responsive web pages with smooth interactions and clean code.</p>
                                         </div>
                                         <h4>What I Provide</h4>
                                         <ul class="my-services">
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Figma → HTML/CSS conversion</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Organized and scalable code structure</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Optimized images & assets</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Web typography, spacing, and visual consistency</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>EO-friendly HTML structure</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -382,8 +365,8 @@
                         <div class="card-with-modal">
                             <div class="service-card">
                                 <div class="service-info">
-                                    <i class="ri-pencil-ruler-2-fill service-icon"></i>
-                                    <h4>Web Design</h4>
+                                    <i class="ri-links-fill service-icon"></i>
+                                    <h4>API Integration</h4>
                                     <a class="service-see-more"> See more <i class="ri-arrow-right-up-fill"></i></a>
                                 </div>
                             </div>
@@ -393,16 +376,16 @@
                                     <a  class="modal-close-btn"><i class="ri-close-line"></i></a>
                                     <div class="modal-content">
                                         <div class="modal-title">
-                                            <h3>Web Design</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id saepe libero exercitationem similique accusamus consequuntur eos non expedita. Tenetur facere modi exercitationem earum laudantium debitis quas dolore quasi laboriosam?</p>
+                                            <h3>API Integration</h3>
+                                            <p>I integrate APIs and dynamic content into websites using JavaScript and fetch-based workflows. Experienced through internship projects and personal web apps.</p>
                                         </div>
                                         <h4>What I Provide</h4>
                                         <ul class="my-services">
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
-                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Design web</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>REST API integration</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Fetch requests & data rendering</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Dynamic UI components</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Form handling & validation</p></li>
+                                            <li><i class="ri-checkbox-circle-fill"></i> <p>Error handling & loading states</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -415,6 +398,180 @@
             </div>
         </div>
     </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section class="asha-section nav-menu-section" id="portfolio">
+        <div class="asha-container asha-sub-container">
+            <div class="wrapper">
+
+                <div class="section-title">
+                    <h3>Portfolio</h3>
+                    <p>Some of My Best Work</p>
+                </div>
+
+                <div class="portfolio-grid-2">
+
+                    <!-- ======== PROJECT 1: Frontend Mentor Hub ======== -->
+                    <div class="portfolio-project-card">
+                        <img src="assets/images/frontend-mentor-hub.png" alt="Frontend Mentor Hub">
+
+                        <div class="project-info">
+                            <h4>Frontend Mentor Projects Hub</h4>
+                            <p>
+                                A portfolio website showcasing all my Frontend Mentor challenges.
+                                Includes live preview, GitHub code, and fully responsive layouts.
+                            </p>
+
+                            <!-- AUTO SCROLLING TECH STACK -->
+                            <div class="tech-scroll">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <!-- duplicate for infinite loop -->
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://asha-16.github.io/frontend-mentor-projects/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/asha-16/frontend-mentor-projects" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======== PROJECT 2: Remote Interview Platform ======== -->
+                    <div class="portfolio-project-card">
+                        <img src="assets/images/remote-interview-platform.png" alt="Remote Interview Platform">
+
+                        <div class="project-info">
+                            <h4>Remote Interview Platform</h4>
+                            <p>
+                                A feature-rich remote interview platform with code editor, video meetings,
+                                 real-time chat, screen sharing, auto code evaluation. <!--dashboard analytics,
+                                room locking, and secure backend APIs. -->
+                            </p>
+
+                            <!-- AUTO SCROLLING TECH STACK -->
+                            <div class="tech-scroll">
+                                <div class="tech-track">
+                                    <span>Next.js</span>
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                    <span>Clerk Auth</span>
+                                    <span>WebRTC</span>
+                                    <span>TanStack Query</span>
+                                    <span>Prism Editor</span>
+                                    <!-- duplicate -->
+                                    <span>Next.js</span>
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                    <span>Clerk Auth</span>
+                                    <span>WebRTC</span>
+                                    <span>TanStack Query</span>
+                                    <span>Prism Editor</span>
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- portfolio-grid-2 -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="asha-section nav-menu-section" id="contact">
+        <div class="asha-container asha-sub-container">
+            <div class="wrapper contact-wrapper">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-left">
+
+                    <div class="contact-links">
+                        <h4 class="contact-heading">CONTACT INFO</h4>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div>
+                                <!-- <p class="contact-label">E-MAIL</p> -->
+                                <p class="contact-value">ashahp.work@gmail.com</p>
+                                <a href="mailto:ashahp.work@gmail.com" class="contact-send">Send ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">WHATSAPP</p>
+                                <p class="contact-value">+91 9880543284</p>
+                                <a href="https://wa.me/919880543284" target="_blank" class="contact-send">Send ↗</a>
+                            </div>
+                        </div> -->
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="ri-linkedin-line"></i>
+                            </div>
+                            <div>
+                                <!-- <p class="contact-label">LINKEDIN</p> -->
+                                <p class="contact-value">ashahp16</p>
+                                <a href="https://www.linkedin.com/in/ashahp16/" target="_blank" class="contact-send">Visit ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4 class="contact-heading social-heading">SOCIAL INFO</h4>
+
+                        <div class="social-icons-contact">
+                            <a href="https://www.linkedin.com/in/ashahp16/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            <a href="https://github.com/asha-16" target="_blank"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- RIGHT SIDE CONTACT FORM -->
+                <div class="contact-right">
+                    <h2 class="form-title">
+                        LET'S WORK <span>TOGETHER.</span>
+                    </h2>
+
+                    <p class="form-subtext">
+                        Feel free to reach out through this form. I’ll get back to you as soon as possible.
+                    </p>
+
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name *">
+                        <input type="email" placeholder="Email *">
+                        <!-- <input type="text" placeholder="Your Subject *"> -->
+                        <textarea placeholder="Your Message *"></textarea>
+
+                        <button class="main-btn fill-btn contact-submit">Send Message</button>
+
+                        <!-- <p class="success-msg">Your message sent successfully! ✓</p> -->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
 
 

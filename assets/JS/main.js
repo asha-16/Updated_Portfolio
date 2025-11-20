@@ -1,3 +1,40 @@
+
+/* ========================================
+   BOTTOM NAVIGATION
+======================================== */
+const bottomNav = document.getElementById("bottomNav");
+const homeSection = document.getElementById("home");
+
+// Track scroll and switch between bottom & sidebar styles
+window.addEventListener("scroll", () => {
+    const homeHeight = homeSection.offsetHeight;
+
+    if (window.scrollY > homeHeight - 120) {
+        bottomNav.classList.add("sidebar");
+    } else {
+        bottomNav.classList.remove("sidebar");
+    }
+});
+
+// Highlight active link on scroll
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+    let scrollPos = window.scrollY + 200;
+
+    sections.forEach(sec => {
+        if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+            document.querySelectorAll(".menu-item a")
+                .forEach(link => link.classList.remove("active"));
+
+            document.querySelector(`.menu-item a[href="#${sec.id}"]`)
+                ?.classList.add("active");
+        }
+    });
+});
+
+
+
 /* ========================================
    RESUME SECTION TABS AND TAB CONTENTS
 ======================================== */
@@ -37,7 +74,7 @@ resumePortfolioTabBtns.forEach((resumePortfolioTabBtn, i) => {
    SERVICE MODAL OPEN/CLOSE FUNCTION
 ======================================== */
 
-const serviceCardWithModals = document.querySelectorAll(".service-container.card-with-modal");
+const serviceCardWithModals = document.querySelectorAll(".service-container .card-with-modal");
 
 serviceCardWithModals.forEach((serviceCardWithModal) => {
     const serviceCard = serviceCardWithModal.querySelector(".service-card");
@@ -56,7 +93,7 @@ serviceCardWithModals.forEach((serviceCardWithModal) => {
             serviceModal.classList.add("active");
         }, 100);
         
-        modalCloseBtn.addEventListener("clicck", () => {
+        modalCloseBtn.addEventListener("click", () => {
 
             setTimeout(() => {
                 serviceBackDrop.style.display = "none";
@@ -71,3 +108,9 @@ serviceCardWithModals.forEach((serviceCardWithModal) => {
         
     });
 });
+
+
+
+
+
+
