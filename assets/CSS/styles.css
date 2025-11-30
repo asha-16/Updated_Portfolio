@@ -358,7 +358,6 @@ body {
 }
 
 
-
 /* ========================================
    HOME
 ======================================== */
@@ -1063,6 +1062,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.project-info h4 strong {
+    color: var(--primary-color);
 }
 
 .project-info h4 {
